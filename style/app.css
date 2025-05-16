@@ -52,8 +52,8 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 svg {
@@ -83,14 +83,13 @@ svg {
 }
 /* introduction */
 .introduction {
-  background-image: linear-gradient(to top, #03030330, #03030330), url("../assets/bg-image-3.jpg");
+  background-image: linear-gradient(to top, #030303b0, #0303037a), url("../assets/bg-image-3.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .introduction__content {
   flex-wrap: wrap;
-  border: 2px solid red;
 }
 
 .introduction__title {
@@ -154,7 +153,7 @@ svg {
 .introduction__card {
   background-color: var(--color-white);
   padding: 1rem 1rem 0;
-  max-width: 21rem;
+  max-width: 25rem;
   border-radius: 0.5rem;
   height: auto;
   margin: 2rem auto;
@@ -213,4 +212,32 @@ svg {
 .intfoduction__number-comments p {
   font-size: 1.4rem;
   color: var(--color-212529);
+}
+
+.introduction__social {
+}
+
+.introduction__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.introduction__social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.introduction__social-item::after {
+  content: "";
+  width: 1px;
+  height: 25px;
+  position: absolute;
+  background-color: var(--color-white);
+  top: 28px;
+  left: -9px;
 }
