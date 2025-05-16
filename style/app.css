@@ -1,0 +1,43 @@
+/** @format */
+
+@import url("reset.css");
+@import url("font.css");
+@import url("grid/grid.css");
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-6cd689: #6cd689;
+  --color-0d6efd: #0d6efd;
+  --color-bg-icon: rgba(0, 77, 80, 0.1058823529);
+  --color-063a41: #063a41;
+  --color-bfd3d3: #bfd3d3;
+  --color-hover: #fbd044;
+  --font-primary: "irsans";
+  --color-566e7c: #566e7c;
+  --color-212529: #212529;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  direction: rtl;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: var(--font-primary);
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
