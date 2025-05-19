@@ -15,6 +15,31 @@
   .introduction__social__keyframes {
     display: none;
   }
+  .services__h2 {
+    font-size: 3rem;
+  }
+  .about-us__img-content {
+    display: none;
+  }
+  .abut-us__types-insurance {
+    flex-wrap: wrap;
+  }
+  .abut-us__description-title-h3 {
+    font-size: 1.4rem;
+  }
+  .abut-us__description-title-p,
+  .abut-us__description-title-span {
+    font-size: 1.2rem;
+  }
+  .abut-us__types-insurance-img {
+    margin-top: 2rem;
+  }
+  .abut-us__types-insurance-img img {
+    width: 100%;
+  }
+  .services__h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 576px) {
@@ -29,11 +54,26 @@
   .nav__desktop-menu {
     display: none;
   }
+  .abut-us__types-insurance {
+    flex-wrap: wrap;
+  }
+  .about-us__description {
+    width: 100%;
+  }
+  .about-us__img-content {
+    display: none;
+  }
+  .services__h2 {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 800px;
+  }
+  .services__h2 {
+    font-size: 5rem;
   }
   .nav__menu-contact {
     display: block;
@@ -85,6 +125,14 @@
   .nav__menu-dropdown,
   .nav__menu-menu-icon {
     display: none;
+  }
+  .about-us__description {
+    width: inherit;
+  }
+  .about-us__img-content {
+    display: flex;
+    flex-grow: 1;
+    object-fit: cover;
   }
 }
 

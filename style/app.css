@@ -386,3 +386,187 @@ svg {
   top: 28px;
   left: -9px;
 }
+/* Main => services */
+main {
+  background-color: #dcdee188;
+}
+.services {
+  margin-top: 5rem;
+}
+.services__h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--color-063a41);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.services__contant-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+.services__card {
+  width: 250px;
+  background-color: var(--color-white);
+  flex-grow: 1;
+  padding: 0 1rem;
+  padding: 2rem 3rem;
+  transition: all 0.5s ease-in;
+  height: 36rem;
+  border-radius: 0.5rem;
+}
+
+.services__card:hover {
+  background-color: var(--color-063a41);
+  color: var(--color-white);
+}
+
+.services__card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__card-icon {
+  width: 90px;
+}
+
+.services__card-arrow {
+  background-color: var(--color-white);
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.services__card-arrow {
+  background-color: var(--color-yellow);
+}
+
+.services__card:hover .services__card-arrow {
+  animation: identifier 0.8s ease;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+}
+.services__card:hover .services__card-h3 h3 a {
+  color: var(--color-white);
+  font-weight: b;
+}
+
+@keyframes identifier {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.services__card-h3 {
+  margin: 5rem 0;
+}
+.services__card-h3 h3 a {
+  margin: 5rem 0;
+  color: var(--color-212529);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.services__card-p {
+}
+/* about us */
+.about-us {
+  margin-top: 5rem;
+}
+
+.about-us__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 74rem;
+  flex-wrap: wrap;
+  background-color: var(--color-white);
+}
+
+.about-us__img-content img {
+  flex-grow: 1;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.about-us__description {
+  padding: 2rem 3.5rem;
+  background-color: var(--color-white);
+}
+
+.abut-us__description-title-h3 {
+  margin: 2rem;
+  font-size: 4rem;
+  color: var(--color-063a41);
+}
+
+strong {
+  font-weight: bold;
+}
+
+.abut-us__description-title-p,
+.abut-us__description-title-span {
+  color: var(--color-063a41);
+  font-weight: 500;
+}
+
+.abut-us__types-insurance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.about-us__types-insurance-item {
+  padding-top: 1rem;
+  color: var(--color-063a41);
+  position: relative;
+  padding-right: 1rem;
+}
+
+.about-us__types-insurance-item::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  right: -17px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background-color: #063a41;
+}
+
+.about-us__types-insurance-p {
+  margin-top: 5rem;
+  font-size: 3rem;
+  color: var(--color-063a41);
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-566e7c);
+}
+
+.abut-us__types-insurance-img {
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 30rem;
+}
+.abut-us__types-insurance-img image {
+  width: 30rem;
+}
